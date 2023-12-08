@@ -1,7 +1,6 @@
 package com.espinozajg.jwt.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.annotation.sql.DataSourceDefinition;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,14 +19,6 @@ public class User {
 	private String pass;
 
 	private String token;
-
-	public User() {}
-
-	public User(String user, String pass, String token) {
-		this.setUser(user);
-		this.setPass(pass);
-		this.setToken(token);
-	}
 
 	public String getUser() {
 		return user;
